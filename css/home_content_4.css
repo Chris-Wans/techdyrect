@@ -1,0 +1,261 @@
+@font-face {
+  font-family: Alata;
+  src: url("../fonts/Alata-Regular.ttf");
+  font-weight: bold;
+}
+
+* {
+  --offwhite: #EEEDE7;
+  --darkgrey: #2E2E2E;
+  --coral: #F79489;
+  --dorange: #b18742;
+}
+
+/* Content 4 */
+
+.content_4 {
+  width: 80%;
+  /* height: 80vh; */
+  display: grid;
+  place-items: center;
+  align-content: center;
+  margin: 50px auto;
+}
+
+.content_4 .card_2 {
+  width: 100%;
+  height: auto;
+  margin: 30px auto;
+  align-items: center;
+  /* background-color: var(--offwhite); */
+  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  color: var(--offwhite);
+}
+
+.content_4 .card_2 .thumbnail_2 {
+  float: right;
+  position: relative;
+  top: -60px;
+  width: 300px;
+  height: 300px;
+  -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: var(--darkgrey);
+  margin: 30px;
+}
+
+.content_4 .card_2 .thumbnail_2 img.right_2 {
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto; */
+  width: 100%;
+  height: 100%;
+  /* -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  object-fit: cover;
+}
+
+/* Right side of the card */
+.content_4 .card_2 .left_2 {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.content_4 .card_2 .left_2 h1 {
+  /* padding-top: 15px; */
+  font-size: 2.5rem;
+  /* color: #4B4B4B; */
+  color: var(--offwhite);
+}
+
+.content_4 .card_2 .left_2 .separator {
+  margin-top: 10px;
+  border: 1px solid #C3C3C3;
+}
+
+.content_4 .card_2 .left_2 p {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 160%;
+  /* color: #4B4B4B; */
+  color: var(--offwhite);
+}
+
+.price-compare-wrapper .trial {
+  font-size: .9rem;
+  font-weight: 600;
+  padding: 0px 16px 6px 16px;
+  color: var(--color-scheme);
+  border: 1px solid #e4e4e4;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: white;
+  position: relative;
+  bottom: -23px;
+  height: 22px;
+}
+
+.price-compare-package ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-top: 29px;
+}
+
+.price-compare-wrapper li {
+  margin-bottom: 15px;
+}
+
+*/ .checkIcon {
+  font-family: "FontAwesome";
+  content: "\f00c";
+}
+
+.price-compare-wrapper li::before {
+  font-family: "FontAwesome";
+  content: "\f00c";
+  font-size: 1.2rem;
+  color: var(--color-scheme);
+  margin-right: 3px;
+}
+
+/* Button Styles */
+
+.content_4 .card_2 .left_2 .button {
+  background-color: var(--dorange);
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid var(--dorange);
+  margin: 20px 0;
+  color: #BFC0C0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .7em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0 10px;
+}
+
+.content_4 .card_2 .left_2 .button a {
+  color: var(--offwhite);
+  text-decoration: none;
+  letter-spacing: 2px;
+  /* font-family: Alata; */
+  font-weight: bolder;
+}
+
+/* Fifth Button */
+
+.content_4 .card_2 .left_2 #button-5 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.content_4 .card_2 .left_2 #button-5 a {
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+.content_4 .card_2 .left_2 #button-5 #translate {
+  transform: rotate(50deg);
+  width: 100%;
+  height: 250%;
+  left: -200px;
+  top: -30px;
+  background: var(--darkgrey);
+  position: absolute;
+  transition: all .3s ease-Out;
+}
+
+.content_4 .card_2 .left_2 #button-5:hover #translate {
+  left: 0;
+}
+
+.content_4 .card_2 .left_2 #button-5:hover a {
+  color: var(--dorange);
+}
+
+/* Content 4 */
+
+/*/ RESPONSIVE STYLING STARTS  HERE /*/
+
+/* Style for screens like desktops */
+
+
+
+/* Style for screens like desktops */
+
+/* Style for screens up to 768px wide (tablets) */
+
+@media screen and (max-width: 1000px) {
+  .content_4 {
+    height: auto;
+    margin: 30px auto;
+    padding: 0;
+  }
+
+  .content_4 .card_2 .left_2 h1 {
+    font-size: 2.0rem;
+  }
+
+  .content_4 .card_2 .left_2 p {
+    font-size: 1.0rem;
+  }
+}
+
+/* Style for screens up to 768px wide (tablets) */
+
+/* Style for screens up to 480px wide (mobile) */
+
+@media (max-width: 500px) {
+  .content_4 {
+    height: auto;
+    margin: 30px auto;
+    padding: 0;
+  }
+
+  .content_4 .card_2 {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .content_4 .card_2 .thumbnail_2 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content_4 .card_2 .left_2 {
+    height: auto;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    margin-top: -70px;
+  }
+
+  .content_4 .card_2 .left_2 h1 {
+    font-size: 1.5rem;
+  }
+
+  .content_4 .card_2 .left_2 p {
+    font-size: 1.0rem;
+  }
+}
+
+/* Style for screens up to 480px wide (mobile) */
+
+/*/ RESPONSIVE STYLING ENDS HERE /*/

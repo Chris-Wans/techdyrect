@@ -1,0 +1,160 @@
+@font-face {
+    font-family: Alata;
+    src: url("../fonts/Alata-Regular.ttf");
+    font-weight: bold;
+}
+
+* {
+    --offwhite: #EEEDE7;
+    --darkgrey: #2E2E2E;
+    --coral: #F79489;
+    --dorange: #b18742;
+}
+
+/* Content 3 */
+
+.content_3 {
+    width: 80%;
+    /* height: 80vh; */
+    display: grid;
+    place-items: center;
+    align-content: center;
+    margin: 50px auto;
+}
+
+.content_3 .card_3 {
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    align-items: center;
+    background-color: var(--offwhite);
+    -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+.content_3 .card_3 .thumbnail_3 {
+    float: left;
+    position: relative;
+    top: -60px;
+    width: 300px;
+    height: 300px;
+    -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: var(--offwhite);
+    margin: 30px;
+}
+
+.content_3 .card_3 .thumbnail_3 img.right_3 {
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    height: auto; */
+    width: 100%;
+    height: 100%;
+    /* -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    object-fit: cover;
+}
+
+/* Right side of the card */
+.content_3 .card_3 .left_3 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.content_3 .card_3 .left_3 h1 {
+    /* padding-top: 15px; */
+    font-size: 2.5rem;
+    color: #4B4B4B;
+}
+
+.content_3 .card_3 .left_3 .separator {
+    margin-top: 10px;
+    border: 1px solid #C3C3C3;
+}
+
+.content_3 .card_3 .left_3 p {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 160%;
+    color: #4B4B4B;
+}
+
+/* Content 3 */
+
+/*/ RESPONSIVE STYLING STARTS  HERE /*/
+
+/* Style for screens like desktops */
+
+
+
+/* Style for screens like desktops */
+
+/* Style for screens up to 768px wide (tablets) */
+
+@media screen and (max-width: 1000px) {
+    .content_3 {
+        height: auto;
+        margin: 30px auto;
+        padding: 0;
+    }
+
+    .content_3 .card_3 .left_3 h1 {
+        font-size: 2.0rem;
+    }
+
+    .content_3 .card_3 .left_3 p {
+        font-size: 1.0rem;
+    }
+}
+
+/* Style for screens up to 768px wide (tablets) */
+
+/* Style for screens up to 480px wide (mobile) */
+
+@media (max-width: 500px) {
+    .content_3 {
+        height: auto;
+        margin: 30px auto;
+        padding: 0;
+    }
+
+    .content_3 .card_3 {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .content_3 .card_3 .thumbnail_3 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content_3 .card_3 .left_3 {
+        height: auto;
+        padding: 0 10px;
+        margin-bottom: 10px;
+        margin-top: -70px;
+    }
+
+    .content_3 .card_3 .left_3 h1 {
+        font-size: 1.5rem;
+    }
+
+    .content_3 .card_3 .left_3 p {
+        font-size: 1.0rem;
+    }
+}
+
+/* Style for screens up to 480px wide (mobile) */
+
+/*/ RESPONSIVE STYLING ENDS HERE /*/

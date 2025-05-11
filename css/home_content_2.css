@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+
+@font-face {
+    font-family: Alata;
+    src: url("../fonts/Alata-Regular.ttf");
+    font-weight: bold;
+}
+
+* {
+    --offwhite: #EEEDE7;
+    --darkgrey: #2E2E2E;
+    --coral: #F79489;
+    --dorange: #b18742;
+}
+
+/* Content 2 */
+
+.content_2 {
+    width: 80%;
+    /* height: 100vh; */
+    display: grid;
+    place-items: center;
+    align-content: center;
+    margin: 50px auto;
+}
+
+.content_2 .card_2 {
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    align-items: center;
+    background-color: var(--offwhite);
+    -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+}
+
+.content_2 .card_2 .thumbnail_2 {
+    float: right;
+    position: relative;
+    top: -60px;
+    width: 300px;
+    height: 300px;
+    -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: var(--offwhite);
+    margin: 30px;
+}
+
+/*object-fit: cover;*/
+/*object-position: center;*/
+.content_2 .card_2 .thumbnail_2 img.right_2 {
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* height: auto; */
+    width: 100%;
+    height: 100%;
+    /* -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    /* object-fit: cover; */
+    object-fit: cover;
+}
+
+/* Right side of the card */
+.content_2 .card_2 .left_2 {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0 30px;
+    margin-top: 50px; */
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.content_2 .card_2 .left_2 h1 {
+    /* padding-top: 15px; */
+    font-size: 2.5rem;
+    color: #4B4B4B;
+}
+
+.content_2 .card_2 .left_2 .separator {
+    margin-top: 10px;
+    border: 1px solid #C3C3C3;
+}
+
+.content_2 .card_2 .left_2 p {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 160%;
+    color: #4B4B4B;
+}
+
+/* Content 2 */
+
+/*/ RESPONSIVE STYLING STARTS  HERE /*/
+
+/* Style for screens like desktops */
+
+
+
+/* Style for screens like desktops */
+
+/* Style for screens up to 768px wide (tablets) */
+
+@media screen and (max-width: 1000px) {
+    .content_2 {
+        height: auto;
+        margin: 30px auto;
+        padding: 0;
+    }
+
+    .content_2 .card_2 .left_2 h1 {
+        font-size: 2.0rem;
+    }
+
+    .content_2 .card_2 .left_2 p {
+        font-size: 1.0rem;
+    }
+}
+
+/* Style for screens up to 768px wide (tablets) */
+
+/* Style for screens up to 480px wide (mobile) */
+
+@media (max-width: 500px) {
+    .content_2 {
+        height: auto;
+        margin: 30px auto;
+        padding: 0;
+    }
+
+    .content_2 .card_2 {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 0 auto;
+        /* justify-content: center;
+        align-content: center;
+        margin: 0; */
+    }
+
+    .content_2 .card_2 .thumbnail_2 {
+        width: 100%;
+        height: 100%;
+        /* padding: 0;
+        margin-bottom: 0; */
+    }
+
+    .content_2 .card_2 .left_2 {
+        height: auto;
+        padding: 0 10px;
+        margin-bottom: 10px;
+        margin-top: -70px;
+    }
+
+    .content_2 .card_2 .left_2 h1 {
+        font-size: 1.5rem;
+    }
+
+    .content_2 .card_2 .left_2 p {
+        font-size: 1.0rem;
+    }
+}
+
+/* Style for screens up to 480px wide (mobile) */
+
+/*/ RESPONSIVE STYLING ENDS HERE /*/
+
+/* Content 2_1 */
+
+:root {
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+    /* --font-sans: "Rubik", sans-serif; */
+    /* --font-serif: "Cardo", serif; */
+}
+
+.content_2_1 {
+    width: 90%;
+    align-items: center;
+    height: auto;
+    margin: auto;
+}
+
+.content_2_1 .page-content {
+    display: flex;
+    width: 100%;
+    grid-gap: 2rem;
+}
+
+.content_2_1 .page-content .card_2_1 {
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    /* padding: 10px; */
+    padding-bottom: 50px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: var(--offwhite);
+    background-color: var(--darkgrey);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+.content_2_1 .page-content .card_2_1:hover {
+    color: var(--offwhite);
+    background-color: transparent;
+}
+
+.content_2_1 .page-content .card_2_1:before {
+    content: "";
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+    pointer-events: none;
+    text-align: center;
+}
+
+.content_2_1 .page-content .card_2_1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%); */
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+}
+
+.content_2_1 .page-content .card_2_1:nth-child(1):before {
+    background-image: url("../images/network.png");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    top: 20px;
+    width: 100%;
+}
+
+.content_2_1 .page-content .card_2_1:nth-child(2):before {
+    background-image: url("../images/supplies2.png");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    top: 20px;
+    width: 100%;
+}
+
+.content_2_1 .page-content .card_2_1:nth-child(3):before {
+    background-image: url("../images/website.png");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    top: 20px;
+    width: 100%;
+}
+
+.content_2_1 .page-content .card_2_1:nth-child(4):before {
+    background-image: url("../images/security_1.png");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    top: 20px;
+    width: 100%;
+}
+
+.content_2_1 .page-content .card_2_1 .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform var(--d) var(--e);
+    z-index: 1;
+}
+
+.content_2_1 .page-content .card_2_1 .content>*+* {
+    margin-top: 3rem;
+}
+
+.content_2_1 .page-content .card_2_1 .content .title {
+    padding: 10px;
+    background-color: var(--offwhite);
+    color: var(--darkgrey);
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* line-height: 1.0; */
+    border-radius: 10px;
+}
+
+.content_2_1 .page-content .card_2_1 .content .copy {
+    font-size: 1.0rem;
+    line-height: 1.35;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+    .card_2_1:after {
+        transform: translateY(0);
+    }
+
+    .content {
+        transform: translateY(calc(100% - 4.5rem));
+    }
+
+    .content>*:not(.title) {
+        opacity: 0;
+        transform: translateY(1rem);
+        transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+    }
+
+    .card_2_1:hover,
+    .card_2_1:focus-within {
+        align-items: center;
+    }
+
+    .card_2_1:hover:before,
+    .card_2_1:focus-within:before {
+        transform: translateY(-4%);
+    }
+
+    .card_2_1:hover:after,
+    .card_2_1:focus-within:after {
+        transform: translateY(-50%);
+    }
+
+    .card_2_1:hover .content,
+    .card_2_1:focus-within .content {
+        transform: translateY(0);
+    }
+
+    .card_2_1:hover .content>*:not(.title),
+    .card_2_1:focus-within .content>*:not(.title) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: calc(var(--d) / 8);
+    }
+
+    .card_2_1:focus-within:before,
+    .card_2_1:focus-within:after,
+    .card_2_1:focus-within .content,
+    .card_2_1:focus-within .content>*:not(.title) {
+        transition-duration: 0s;
+    }
+}
+
+/* Content 2_1 */
+
+/*/ RESPONSIVE STYLING STARTS  HERE /*/
+
+/* Style for screens like desktops */
+
+
+
+/* Style for screens like desktops */
+
+/* Style for screens up to 768px wide (tablets) */
+
+@media screen and (max-width: 1000px) {
+    .content_2_1 {
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .page-content {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card_2_1 .content {
+        padding-top: 50px;
+    }
+
+    .title {
+        font-size: 1.0rem;
+    }
+
+    .copy {
+        font-size: 0.8rem;
+    }
+
+    .card_2_1 {
+        width: auto;
+    }
+}
+
+/* Style for screens up to 768px wide (tablets) */
+
+/* Style for screens up to 480px wide (mobile) */
+
+@media (max-width: 500px) {
+    .content_2_1 {
+        margin-top: 20px;
+    }
+
+    .content_2_1 .page-content {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content_2_1 .page-content .card_2_1 {
+        width: auto;
+    }
+
+    .content_2_1 .page-content .card_2_1 .content {
+        padding-top: 50px;
+    }
+
+    .content_2_1 .page-content .card_2_1 .content .title {
+        font-size: 1.0rem;
+    }
+
+    .content_2_1 .page-content .card_2_1 .content .copy {
+        font-size: 0.8rem;
+    }
+}
+
+/* Style for screens up to 480px wide (mobile) */
+
+/*/ RESPONSIVE STYLING ENDS HERE /*/

@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Elianto;
+    src: url("../fonts/Elianto-Regular.ttf");
+    font-weight: bold;
+}
+
+* {
+    --offwhite: #EEEDE7;
+    --darkgrey: #2E2E2E;
+    --coral: #F79489;
+    --dorange: #b18742;
+}
+
+.hero {
+    width: 90%;
+    height: 80vh;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.hero img {
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+    filter: brightness(80%) blur(4px);
+}
+
+.bg {
+    width: 100%;
+    font-family: Elianto;
+    font-size: 150px;
+    line-height: 150px;
+    text-transform: uppercase;
+    background: url(../images/bg_0.jpg) 0 0 / cover no-repeat;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.bg2 {
+    width: 100%;
+    font-family: Alata;
+    font-size: 50px;
+    /* text-transform: uppercase; */
+    background: url(../images/bg_0.jpg) 0 0 / cover no-repeat;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Centered text */
+.centered {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg {
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.bg2 {
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+
+/*/ RESPONSIVE STYLING STARTS  HERE /*/
+
+/* Style for screens like desktops */
+
+/* Style for screens like desktops */
+
+/* Style for screens up to 768px wide (tablets) */
+
+@media screen and (max-width: 1000px) {
+    .hero {
+        height: 100%;
+        margin-top: 10px;
+    }
+
+    .hero .centered .bg {
+        font-size: 60px;
+        line-height: 50px;
+    }
+
+    .hero .centered .bg2 {
+        font-size: 30px;
+    }
+}
+
+/* Style for screens up to 768px wide (tablets) */
+
+/* Style for screens up to 480px wide (mobile) */
+
+@media (max-width: 500px) {
+    .hero img {
+        width: auto;
+        height: 500px;
+    }
+
+    .hero {
+        /* height: 600px; */
+        margin-top: 10px;
+    }
+
+    .hero .centered .bg {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .hero .centered .bg2 {
+        font-size: 15px;
+    }
+}
+
+/* Style for screens up to 480px wide (mobile) */
+
+/*/ RESPONSIVE STYLING ENDS HERE /*/

@@ -1,0 +1,139 @@
+* {
+    --offwhite: #EEEDE7;
+    --darkgrey: #2E2E2E;
+    --coral: #F79489;
+    --dorange: #b18742;
+}
+
+/* Content 5 */
+
+.content_5 {
+    width: 80%;
+    align-content: center;
+}
+
+.content_5 .card_2 {
+    width: auto;
+    height: auto;
+    margin: 50px auto;
+    align-content: center;
+    position: relative;
+    background-color: var(--darkgrey);
+    color: var(--offwhite);
+    -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    padding: 0 20% 0 20%;
+}
+
+.content_5 .card_2 .left_2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* margin-right: 20%;
+    margin-left: 20%; */
+}
+
+.content_5 .card_2 .left_2 .separator {
+    margin: 10px;
+    border: 1px solid #C3C3C3;
+}
+
+@keyframes slide {
+    from {
+        left: 0
+    }
+
+    to {
+        left: -980px
+    }
+}
+
+.content_5 .card_2 .left_2 .slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content_5 .card_2 .left_2 .container {
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content_5 .card_2 .left_2 .container div {
+    margin-right: 160px;
+    display: flex;
+    flex-shrink: 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.content_5 .card_2 .left_2 .container div img {
+    height: auto;
+    width: 100px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+/* Content 5 */
+
+/*/ RESPONSIVE STYLING STARTS  HERE /*/
+
+/* Style for screens like desktops */
+
+
+
+/* Style for screens like desktops */
+
+/* Style for screens up to 768px wide (tablets) */
+
+@media screen and (max-width: 1000px) {
+    .content_5 .card_2 .left_2 h1 {
+        font-size: 2.0rem;
+    }
+
+    .container div img {
+        height: auto;
+        width: 120px;
+    }
+}
+
+/* Style for screens up to 768px wide (tablets) */
+
+/* Style for screens up to 480px wide (mobile) */
+
+@media (max-width: 500px) {
+    .content_5 .card_2 {
+        padding: 0 10px 0 10px;
+    }
+
+    .content_5 .card_2 .left_2 h1 {
+        font-size: 1.5rem;
+    }
+
+    .container div img {
+        height: auto;
+        width: 100px;
+    }
+}
+
+/* Style for screens up to 480px wide (mobile) */
+
+/*/ RESPONSIVE STYLING ENDS HERE /*/

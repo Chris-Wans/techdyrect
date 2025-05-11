@@ -1,0 +1,233 @@
+@font-face {
+    font-family: Alata;
+    src: url("../fonts/Alata-Regular.ttf");
+    font-weight: bold;
+}
+
+* {
+    --offwhite: #EEEDE7;
+    --darkgrey: rgb(46, 46, 46);
+    --coral: #F79489;
+    --dorange: #b18742;
+}
+
+/* Content 1 */
+
+.content_1 {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+    /* height: 50vh; */
+}
+
+/* The card */
+.content_1 .card {
+    width: 100%;
+    height: auto;
+    /* margin: 10px auto; */
+    background-color:rgba(46, 46, 46, 0.9);
+    -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image on the left side */
+.content_1 .card .thumbnail {
+    float: left;
+    position: relative;
+    top: -60px;
+    width: 300px;
+    height: 200px;
+    -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    border-radius: 5px;
+    align-content: center;
+    margin: 30px;
+    background-color: var(--offwhite);
+}
+
+.content_1 .card .thumbnail img.left {
+    /* height: 250px;
+    width: 400px; */
+    /* position: absolute; */
+    /* left: 50%;
+    top: 50%; */
+    width: 100%;
+    height: 100%;
+    /* -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Right side of the card */
+.content_1 .card .right {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.content_1 .card .right h1 {
+    /* padding-top: 10px; */
+    font-size: 2.5rem;
+    color: var(--offwhite);
+    margin-bottom: 0;
+}
+
+.content_1 .card .right .separator {
+    margin: 5px;
+    border: 1px solid #C3C3C3;
+}
+
+.content_1 .card .right p {
+    text-align: center;
+    /* padding-top: 20px; */
+    font-size: 1.2rem;
+    line-height: 150%;
+    color: var(--offwhite);
+}
+
+/* Button Styles */
+
+.content_1 .card .right .button {
+    align-self: center;
+    background-color: var(--dorange);
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid var(--dorange);
+    margin: 20px;
+    color: #BFC0C0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .7em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0 10px;
+}
+
+.content_1 .card .right .button a {
+    color: var(--offwhite);
+    text-decoration: none;
+    letter-spacing: 2px;
+    /* font-family: Alata; */
+    font-weight: bolder;
+}
+
+/* Fifth Button */
+
+.content_1 .card .right #button-5 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.content_1 .card .right #button-5 a {
+    position: relative;
+    transition: all .45s ease-Out;
+}
+
+.content_1 .card .right #button-5 #translate {
+    transform: rotate(50deg);
+    width: 100%;
+    height: 250%;
+    left: -200px;
+    top: -30px;
+    background: var(--darkgrey);
+    position: absolute;
+    transition: all .3s ease-Out;
+}
+
+.content_1 .card .right #button-5:hover #translate {
+    left: 0;
+}
+
+.content_1 .card .right #button-5:hover a {
+    color: var(--dorange);
+}
+
+/* Content 1 */
+
+/*/ RESPONSIVE STYLING STARTS  HERE /*/
+
+/* Style for screens like desktops */
+
+
+
+/* Style for screens like desktops */
+
+/* Style for screens up to 768px wide (tablets) */
+
+@media screen and (max-width: 1000px) {
+
+    .content_1 {
+        height: auto;
+        margin: 30px auto;
+        padding: 0;
+    }
+
+    .content_1 .card .right {
+        height: auto;
+        padding: 0 10px;
+    }
+
+    .content_1 .card .right h1 {
+        font-size: 2.0rem;
+    }
+
+    .content_1 .card .right p {
+        text-align: justify;
+        font-size: 1.0rem;
+        /* line-height: 150%; */
+        color: var(--offwhite);
+    }
+}
+
+/* Style for screens up to 768px wide (tablets) */
+
+/* Style for screens up to 480px wide (mobile) */
+
+@media (max-width: 500px) {
+    .content_1 {
+        height: auto;
+        margin: 30px auto;
+        padding: 0;
+    }
+
+    .content_1 .card {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content_1 .card .right {
+        height: auto;
+        padding: 0 10px;
+    }
+
+    .content_1 .card .right h1 {
+        font-size: 1.5rem;
+    }
+
+    .content_1 .card .right p {
+        text-align: center;
+        font-size: 1.0rem;
+        /* line-height: 150%; */
+        color: var(--offwhite);
+    }
+}
+
+/* Style for screens up to 480px wide (mobile) */
+
+/*/ RESPONSIVE STYLING ENDS HERE /*/
