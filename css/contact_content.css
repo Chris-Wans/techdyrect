@@ -276,10 +276,6 @@
     background-color: var(--darkgrey);
     border-radius: 5px;
     padding: 5px;
-    /* background-image: url("https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/sc23.png"); */
-    /* background-size: cover; */
-    /* background-position-x: 50%; */
-    /* background-position-y: 50%; */
 }
 
 .contact_us_6 .map-box iframe {
@@ -576,14 +572,6 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
-
-/* *,
-*:before,
-*:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-} */
 
 body {
     margin: 0;
