@@ -143,7 +143,7 @@
     padding-top: 1px;
     padding-right: 15px;
     padding-bottom: 1px;
-    padding-left: 15px;
+    padding-left: 40px;
     border-top-width: 2px;
     border-right-width: 2px;
     border-bottom-width: 2px;
@@ -171,7 +171,7 @@
     padding-top: 20px;
     padding-right: 15px;
     padding-bottom: 20px;
-    padding-left: 15px;
+    padding-left: 40px;
     border-top-width: 2px;
     border-right-width: 2px;
     border-bottom-width: 2px;
@@ -228,6 +228,16 @@
     margin-right: 48px;
     margin-bottom: 0px;
     margin-left: 0px;
+}
+
+.contact_us_6 .form-box input[type='text']:valid,
+input[type='email']:valid,
+input[type='tel']:valid {
+    background: url(../images/check-circle-svgrepo-com.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: #eeeeee;
 }
 
 .contact_us_6 .text-blk.input-title {
